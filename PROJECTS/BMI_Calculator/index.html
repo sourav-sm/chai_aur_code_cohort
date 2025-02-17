@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calulator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            BMI CALCULATOR
+        </div>
+        <div class="input-container">
+            <div>
+                <p>Select Your age</p>
+                 <select id="age-val" placeholder="Select your Age Range">
+                    <option value="Below 18">Below 18</option>
+                    <option value="18-24">18-24</option>
+                    <option value="25-34">25-34</option>
+                    <option value="35-44">35-44</option>
+                    <option value="45-54">45-54</option>
+                    <option value="55-64">55-64</option>
+                    <option value="65+">65+</option>
+                 </select>
+            </div>
+            <div>
+                <p>Enter Your Weight (in kg)</p>
+                <input type="number" id="weight-val" placeholder="Enter your Weight">
+            </div>
+            <div>
+                <p>Enter Your height (in cm)</p>
+                <input type="number" id="height-val" placeholder="Enter your height">
+            </div>
+            <div>
+                <button id="check-btn">Check</button>
+            </div>
+            <div class="result-container">
+                <div id="final-result">
+                    
+                </div>
+                <div id="bmi-category">
+
+                </div>
+            </div>
+        </div>
+        <!-- tabel of BMI Values -->
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
