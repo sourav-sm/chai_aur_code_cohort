@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Calculator Container */
+.container {
+    width: 300px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Display Screen */
+#final-result {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    color: #000;
+    text-align: right;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttons div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons div div {
+    width: 60px;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.buttons div div:hover {
+    background-color: #555;
+}
+
+/* Special Buttons */
+#division, #multiply, #minus, #plus {
+    background-color: orange;
+}
+
+#division:hover, #multiply:hover, #minus:hover, #plus:hover {
+    background-color: #ff9800;
+}
+
+/* Equal Button */
+#fifth-row div:last-child {
+    background-color: green;
+    color: white;
+}
+
+#fifth-row div:last-child:hover {
+    background-color: #4caf50;
+}
+
+/* AC and Backspace */
+#first-row div:first-child,
+#fifth-row div:nth-child(3) {
+    background-color: red;
+    color: white;
+}
+
+#first-row div:first-child:hover,
+#fifth-row div:nth-child(3):hover {
+    background-color: darkred;
+}
