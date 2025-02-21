@@ -1,95 +1,55 @@
-/* General Styles */
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
-/* Calculator Container */
-.container {
-    width: 300px;
-    background-color: #222;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Display Screen */
-#final-result {
+.container{
     width: 100%;
-    height: 50px;
-    background-color: #fff;
-    color: #000;
-    text-align: right;
-    font-size: 24px;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    height: 100vh;
     display: flex;
+    background-color: #e3f9ff;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
-/* Buttons */
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.calculator{
+    background: #3a4452;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-.buttons div {
-    display: flex;
-    justify-content: space-between;
-}
-
-.buttons div div {
+.calculator form input{
+    border: 0;
+    outline: 0;
     width: 60px;
     height: 60px;
-    background-color: #333;
-    color: white;
+    border-radius: 10px;
+    box-shadow:aqua 0px 0px 10px;
+    background: transparent;
     font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
+    color: #fff;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
+    margin: 10px;
 }
-
-.buttons div div:hover {
-    background-color: #555;
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
 }
-
-/* Special Buttons */
-#division, #multiply, #minus, #plus {
-    background-color: orange;
+form .display input{
+    text-align: right;
+    flex:1;
+    font-size: 45px;
+    box-shadow: none;
 }
+form input.operator{
+    background: #FFC72C;
+    color: #3a4452;
 
-#division:hover, #multiply:hover, #minus:hover, #plus:hover {
-    background-color: #ff9800;
 }
-
-/* Equal Button */
-#fifth-row div:last-child {
-    background-color: green;
-    color: white;
-}
-
-#fifth-row div:last-child:hover {
-    background-color: #4caf50;
-}
-
-/* AC and Backspace */
-#first-row div:first-child,
-#fifth-row div:nth-child(3) {
-    background-color: red;
-    color: white;
-}
-
-#first-row div:first-child:hover,
-#fifth-row div:nth-child(3):hover {
-    background-color: darkred;
+form input.equal{
+    width: 145px;
+    background:#B22222;
 }
