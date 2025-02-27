@@ -143,3 +143,5 @@
 - You can use any images, icons, or emojis for the cards.
 - Suggested 8 emojis for card pairs:
   🐶, 🐱, 🐭, 🐹, 🐰, 🦊, 🐻, 🐼.
+
+
