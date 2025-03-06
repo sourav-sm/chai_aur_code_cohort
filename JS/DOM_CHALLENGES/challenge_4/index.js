@@ -18,7 +18,7 @@ function checkEmptyList() {
       const emptyMessage = document.querySelector(".empty-list");
       if (emptyMessage) emptyMessage.remove();
     }
-  }
+}
 
 function addTask() {
     const taskText = taskInput.value.trim();
