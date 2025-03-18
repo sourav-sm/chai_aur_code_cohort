@@ -10,7 +10,7 @@ function fetchQuotes(){
         const qutoes=document.getElementById('Quote');
         qutoes.innerHTML=quote;
         const Author=document.getElementById('Author');
-        Author.innerHTML=author; 
+        Author.innerHTML=`---${author}`; 
     })
     .catch(err=>{
         console.error('error while fetching data',err);
