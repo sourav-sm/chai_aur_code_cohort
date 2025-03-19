@@ -38,7 +38,7 @@ function shareOnTwitter(){
     const author=document.getElementById('Author').innerText;
 
     const tweetText=`${text}--${author}`;
-    const tweetUrl=`https:/twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
+    const tweetUrl=`https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
 
     window.open(tweetUrl,'_blank');
 }
